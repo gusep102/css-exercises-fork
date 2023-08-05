@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+/* *{
+  border-color: aqua;
+  border-style: dashed;
+} */
+
 body {
   height: 100vh;
   margin: 0;
@@ -24,4 +29,56 @@ input {
   padding: 8px 24px;
   width: 400px;
   margin-bottom: 16px;
+}
+
+a {
+  /* this removes the line under our links */
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 16px;
+}
+
+/* solution */
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items:stretch;
+  justify-content: space-between;
+}
+
+.header {
+  display: flex;
+  padding: 10px;
+
+}
+
+.right-links {
+  margin-left: auto;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  gap: 10px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  flex-shrink: 0;
+  padding: 10px;
+  background-color: #eeeeee;
+}
+
+button {
+  padding: 10px 30px;
 }
